@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Itens</title>
+    <style>
+        .container {
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item {
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+        }
+
+        .flex {
+            flex: 1
+        }
+        .center {
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .flex-start {
+            align-items: flex-start;
+        }
+
+        .flex-end {
+            align-items: flex-end;
+        }
+
+        .baseline {
+            align-items: baseline;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .central {
+            height: 300px;
+            justify-content: center;
+        }
+
+        .central .item {
+            flex: 0;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+        alinhamento dos flex itens de acordo com o eixo do container
+        alinhamento é diferente para quando os items estão em colunas ou linhas
+        permite o alinhamento central no eixo vertical.
+        center ao centro
+        stretch padrao
+        flex-start alinhamento no inicio
+        flex-end: no final
+        baseline: de acordo com a linha base da tipografia dos itens.
+    -->
+    <h1>Row</h1>
+    <p>Center</p>
+    <section class="container center">
+        <div class="item">1</div>
+        <div class="item">Lorem lorem lorem</div>
+        <div class="item">3 Lorrrrrem loem loa pao douol lorem ipsum</div>
+    </section>
+
+    <p>Strecth</p>
+    <section class="container stretch">
+        <div class="item">1</div>
+        <div class="item">Lorem lorem lorem</div>
+        <div class="item">3 Lorrrrrem loem loa pao douol lorem ipsum</div>
+    </section>
+
+    <p>Flex Start</p>
+    <section class="container flex-start">
+        <div class="item">1</div>
+        <div class="item">Lorem lorem lorem</div>
+        <div class="item">3 Lorrrrrem loem loa pao douol lorem ipsum</div>
+    </section>
+
+    <p>Flex End</p>
+    <section class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">Lorem lorem lorem</div>
+        <div class="item">3 Lorrrrrem loem loa pao douol lorem ipsum</div>
+    </section>
+
+    <p>BaseLine</p>
+    <section class="container baseline">
+        <div class="item">1</div>
+        <div class="item">Lorem lorem lorem</div>
+        <div class="item">3 Lorrrrrem loem loa pao douol lorem ipsum</div>
+    </section>
+
+    <h1>Column</h1>
+    <p>Flex Start</p>
+    <section class="container flex-start column">
+        <div class="item">1</div>
+        <div class="item">Lorem lorem lorem</div>
+        <div class="item">3 Lorrrrrem loem loa pao douol lorem ipsum</div>
+    </section>
+
+    <p>Flex End</p>
+    <section class="container flex-end column">
+        <div class="item">1</div>
+        <div class="item">Lorem lorem lorem</div>
+        <div class="item">3 Lorrrrrem loem loa pao douol lorem ipsum</div>
+    </section>
+
+    <p>Center</p>
+    <section class="container center column">
+        <div class="item">1</div>
+        <div class="item">Lorem lorem lorem</div>
+        <div class="item">3 Lorrrrrem loem loa pao douol lorem ipsum</div>
+    </section>
+
+    <p>Baseline</p>
+    <section class="container baseline column">
+        <div class="item">1</div>
+        <div class="item">Lorem lorem lorem</div>
+        <div class="item">3 Lorrrrrem loem loa pao douol lorem ipsum</div>
+    </section>
+
+    <p>Alinhamento central à tela.</p>
+    <section class="container central center">
+        <div class="item"> Lorem ipusum Lorem ipusum Lorem ipusum Lorem ipusum Lorem ipusum Lorem ipusum Lorem ipusum Lorem ipusum Lorem ipusum Lorem ipusum Lorem ipusum Lorem ipusum Lorem ipusum Lorem ipusum Lorem ipusum Lorem ipusum Lorem ipusum.</div>
+    </section>
+    <!--
+        respeita o tamanho do texto, independente do tamanho da altura.  
+        crescimento proporcional.
+    -->
+</body>
+</html>

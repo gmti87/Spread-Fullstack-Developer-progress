@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis e Tipos - Tipos</title>
+</head>
+<body>
+    <h1>Olhar o código interno da página</h1>
+    <!--
+        Tipos
+
+        Objetivos
+        1. Apresentar as principais estruturas de dados do JavaScript e seus principais métodos.
+
+        Estruturas de dados
+        Javascript é uma linguagem de tipagem dinamica.
+
+        Ou seja, antes de declarar um valor, você naõ especifica o tipo dela.
+        
+        no console do navegador
+        int um = "um";
+        um
+        "um"
+        typeof um
+        um = 1
+        1
+        typeof um
+        number
+
+        dois tipos
+        primitivos
+        numbers, strings, boolean, null, undefined
+        non-primitive
+        objects, arrays
+
+        Strings
+        exemplos
+        const DIO = 'Digital Innovation One'
+
+        let firstName = "João"
+        let lastNome = "Silva"
+
+        comumente usada para textos
+        valores declarados entre aspas ou crases
+        
+        no console
+        let nome = "João"
+        let sobrenome = "Pedro"
+
+        let concatenado = nome.concat(sobrenome)
+        concatenado.length
+
+        let exemplo = new String("blablabla")
+        objeto
+
+        string é iteravel
+
+        nome[1]
+        retorna = "o"
+
+        nome.length
+        retorna = 4
+
+        sempre começa no 0 o indice.
+
+        para ter um espaço
+        concatenado = nome + " " + sobrenome
+
+        para ter um nome em uma linha e o outro na linha debaixo
+        concatenado = nome + " \n " + sobrenome
+
+        escrever direto
+        concatenado = `${nome} ${sobrenome}
+
+        printar aspas
+        concatenado = """
+
+        let frase = "Olá, tudo bem!"
+        frase.split("")
+        separa tudo
+        com espaço(" ") - separa só quando tem um espaço.
+
+        frase.include("tudo")
+        retorna true
+
+        frase.startsWith("O")
+        retorna true
+
+        frase.endsWith("?")
+        retorna true
+
+        frase.replace(",", "!")
+        retorno de outra frase
+        
+        let stringModificada = frase.replace(",", "!")
+
+        métodos importantes:
+        concatenação
+        propriedade length
+        iterabilidade
+        formatação
+        index de letra
+
+        Numbers
+        numeros inteiros ou decimais
+        basicamente aritmetica
+
+        let num = 103
+        100 + 3
+        100 / 5
+        num / 3
+
+        num * 5
+        num * 3
+
+        num % 2 para ver se é par
+        
+        biblioteca Math
+        Math.typeof
+        objeto
+        algumas coisas já são declaradas.
+
+        floor - arredona para baixo
+        ceil - arredonda para cima
+
+        porcentagem - usa string e concatenação.
+        para mudar para string variavel.string()
+
+        booleans
+        ou retorna true ou false
+        
+        no console
+        let validatation = 3 == 0
+        validatation
+
+        validatation = 3 == 3
+        true
+
+        validatation = 3 > 4
+        false
+
+        validatation = 3 > 2
+        true
+
+        validatation = 3 >= 2
+        true
+
+        pode transformar em uma string.
+
+        !validatation - para retornar o contrario.
+
+        Arrays
+
+        listas iteraveis de elementos.
+        length
+
+        no console 
+        
+        let array = []
+        let array = new Array()
+
+        array.push() - adiciona no final.
+        array.push(3)
+
+        array.push(2)
+
+        tirar elemento
+        array.pop()
+
+        array.push(5)
+
+        array.shift() - tirar o primeiro elemento
+        array.unsshift() - adiciona no inicio.
+
+        mostra todos os elementos do array
+        for (let i = 0; array.length; i++) {
+            console.log(array[i])
+        }
+
+        every - todos os elementos são
+        some - tem algum elemento
+        reverse - mostra no ordem inversa.
+
+        Objetos
+
+        let person = {
+            name: "Jonn"
+            age: 20
+        }
+
+        no console
+        let obj = {}
+        obj.name = "Julia"
+
+        obj
+
+        obj.age = 20
+
+        object.values(obj)
+        object.keys(obj)
+
+        let person = {
+            name: "Julia",
+            age: 20
+            endereco: "Rua 2"
+        }
+
+        person
+
+        person.name
+        person["name"]
+        person["numberOfSiblings"] = 3
+
+        let mom = "nameOfMom"
+
+        não pode
+        person.mom = "asas"
+
+        person[mom] = "Maria"
+
+        Empty, undefined e null
+        se verificar todos retornam como falso.
+        
+        null - não existe (de proposito) 
+        
+        abacaxi
+        typeof abacaxi
+
+        let abacaxi
+        typeof abacaxi
+    -->
+</body>
+</html>

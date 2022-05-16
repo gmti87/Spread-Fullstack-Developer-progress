@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <h1>Funções - conteudo da aula ver código da página, pois esta como comentário JavaScript está em arquivo separado com o nome de app.js.</h1>
+    <!--
+        Objetivo do curso
+        1. mostrar como declarar funções
+        2. como manipular parâmetros
+        3. Apresentar loops e outras declarações
+        4. Apresentar o argumento "this"
+        
+        Percurso
+        Tipos de função
+        Parâmetros
+        Loops
+        A palavra "this"
+        Arrow functions
+        Atividade Prática
+
+        Estrutura e Função anônima
+        Objetivos
+        1. Apresentar a extrutura de uma função
+        2. Alguns outros tipos de funções e como são utilizadas.
+
+        Extrutura
+        function nome(parametros) {
+            intruções
+        }
+
+        qualquer variavel criada dentro da função só sera acessada dentro da função.
+
+        return - para a função
+        retorna um valor ou não.
+
+        função anonima
+
+        const soma = function(a, b) {
+            return a + b;
+        }
+
+        soma(1, 2) // 4
+        soma(5, 4) // 9
+
+        função autoinvocavel
+        una função anonima entre parenteses, seguida por outro par de parenteses que representa sua chamada.
+        (
+            function() {
+                let name = "Digital Innovation One"
+                return name;
+            }
+        )();
+        // Digital Innovation One
+
+        podemos usar a função do soma
+
+        callback
+        função passada como argumento para outra função.
+        podemos controlar quando a função ira retornar.
+
+        Aula 2 - Parametros
+
+        valores padrão e objetos arguments
+
+        objetivos
+        ensinar como manipular parametros de uma função
+        tecnicas para lidar com números indefinidos de parametros
+
+        valores padrao
+        ecamscript 2015
+
+        antes verificava se paramentro vinha como undefined e atribuia o valor 1
+        depois de 2015 definido na propria função o valor.
+
+        arguments
+        array com todos os parametros passados quando a função foi invocada.
+        
+        arrays e objetos
+        arrays - spread: uma forma de lidar separadamente com elementos
+        o que era parte de um array se torna um elemento independente.
+
+        rest - combina os argumentos em um array
+        o que era um elemento independente se torna parte de um array.
+        quando se declara a função.
+
+        objetos
+        object destructing
+        entre as chaves {}, podemos filtrar apenas os dados que nos interessam em um objeto.
+                
+        Aula 3 - Loops
+
+        ensinar como utilizar algumas das mais famosas declarações do JavaScript
+
+        if/else
+        switch
+        equivale a uma comparação de tipo e valor(====)
+        sempre precisa de um valor default
+        ideal para quando se precisa comparar muitos valores.
+        se variavel for number e voce mandar string o switch vai para o default.
+        
+        funções
+        loop for
+        dentro de elementos iteraveis (arrays, strings)
+        for in loop entre propriedades enumeraveis de um objeto.
+        usado para objetos.
+        for of loop entre estruturas iteeraveis (arrays, strings)
+
+        while e do while
+        while - executa instruções até que a condição se torne falsa.
+        do while - executa instruções até que a condição se torne falsa, porém a primeira execução sempre ocorre.
+
+        Aula 4 - This
+
+        objetivos
+        apresentar a palavra this
+        e ensinar como podemos manipula-la
+
+        this: o que é?
+        a palavra reservada this é uma referencia de contexto.
+        quando se declara a palavra this dentro do objeto essa palavra se refere ao objeto.
+
+        seu valor pode mudar de acordo com o lugar no código onde foi chamada.
+        contexto                referencia
+        em um objeto (método)   proprio objeto dono do método
+        sozinha                 objeto global (em navegadores, window)
+        função                  objeto global
+        evento                  elemento que recebeu o evento
+
+        call
+
+        apply - parecida com a função call.
+        é possivel passar parametros para essa função dentro de um array.
+        bind
+        clona a estrutura onde é chamada e aplica o valor do objeto passado como parametro.
+        
+        Aula 5 - Arrow Functions
+        objetivos arrow functions
+
+        const helloWorld = () => {
+            return "Hello World";
+        }
+        não precisa do return se função for pequena.
+        sempre aliada a uma constante.
+
+        arrow functions não faz hosting.
+
+        outras restrições
+        this sempre sera do objeto global
+        funções call, apply e bind não funcionam
+        não existe o objeto arguments
+        metodos função comum 
+    -->
+</body>
+</html>

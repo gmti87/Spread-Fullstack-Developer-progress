@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulos</title>
+</head>
+<body>
+    <h1>Módulos</h1>
+    <p>
+        Matéria da aula esta no comentada no código-fonte desta página, atividade pratica em arquivo separado (projeto.html, projeto.css, funcoes.mjs e main.mjs).
+    </p>
+    <!--
+        Módulos
+        Explicar a necessidade do uso de módulos
+        ensinar como utilizá-los.
+
+        Utilização
+        objetivos
+        explicar o que são os módulos em Javascript
+        ensinar como utilizar esse módulos
+        alertar para algumas particularidades.
+
+        o que são modulos
+        modulos são arquivos javascript que tem a capacidade de exportar e importar informações de outros arquivos do mesmo tipo.
+
+        algumas vantagens são
+        organização do código
+        compartilhamento de variavies de escopos diferentes
+        explicita as dependencias dos arquivos.
+
+        exportar
+        named exports
+        mais de uma coisa
+        exporta individualmente
+
+        export function
+
+        functions
+        export {
+            functions
+        }
+
+        default export
+        somente um por arquivo;
+        retorno padrão ou seja será o retorno padrão do seu arquivo.
+
+        importar
+        named exports
+        import {funcao, variavel, classe} from './arquivo.js'
+        
+        default exports
+        import valorDefault from './arquivo.js'
+
+        pode ser mjs
+
+        trocando nome de imports
+
+        import { arquivo as Apelido } from './arquivo.js'
+
+        Apelido.metodo();
+
+        importando todos os dados de um arquivo.
+
+        import * as INFOS from './arquivos.js';
+        INFOS.metodoA();
+        console.log(INFOS.variavel);
+
+        vinculando ao HTML
+        <script type="module" src="./main.js"></script>
+        
+        Para fazer testes localmente (de um arquivo no seu computador), será necessário estar rodando um servidor. Isso pode ser fetio utilizando a extensão "Live Server", do VSCODE.
+
+        outras curiosidades
+        módulos são sempre em "script mode";
+        podem ser utilizadas as extensões .js e .mjs;
+        para testes locais, é necessário utilizar um servidor;
+        ao importar sempre lembre da extensão (.js, .mjs);
+        ao importar, sempre utilize "./" como ponto de partida.
+        
+    -->
+</body>
+</html>

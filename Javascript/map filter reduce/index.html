@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map, filter e Reduce</title>
+</head>
+<body>
+    <h1>Máteria da aula comentada no código-fonte da página, prática em arquivo separado chamado app.js</h1>
+    <!--
+        map
+        apresentação do curso
+        demonstrar a utilização dos tres metodos importantes para arrays.
+        percurso map, filter, reduce e atividade pratica.
+
+        o que é
+        conhecer a implementação do metodo map
+
+        cria um novo array
+        não modifica o array original
+        realiza as operações em ordem
+
+        sintaxe do map
+        array.map(callback, thisArg)
+        
+        callback(item, index, array)
+        
+        callback: função a ser excutada em cada elemento
+        thisArg(opcional): valor do this dentro da função de callback.
+
+        map vs foreach
+        const array = [1, 2, 3, 4, 5];
+        array.map((item) => item * 2);
+        retorna 2, 4, 8, 10
+        
+        const array = [1, 2, 3, 4, 5];
+        array.forEach((item) => item * 2);
+        retorna undefined
+        com o foreach retorna undefined;
+        precisa de array auxiliar.
+
+        filter e sintaxe
+        objetivos da aula
+        conhecer a aplicação do filter
+
+        filter
+        todo array dentro de um filtro
+        cria um novo array
+        não modifica o array original
+        arrray.filter(callback, thisarg)
+
+        callback - função a ser executada en cada elmento
+        thisarg - opicional
+
+        exemplo
+        const frutas = ['maçã fuji', 'maçã verde', 'laranja', 'abacaxi']
+
+        frutas.filter((filter) => fruta.includes('maça'))
+
+        reduce e sintaxe
+        objetivos
+        conhecer a implementação
+
+        reduce
+        executa uma função em todos os elementos do array, retornando um valor unico.
+
+        array.reduce(callbackfn, initialvalue)
+
+        callback: função a ser executada a partir do acumulador
+        initialvalue (opicional) valor sobre o qual o retorno final ira atuar.
+
+        const callbackFn = function(accumulator, currentValue, index, aray) {
+            do something
+        }
+
+        array.reduce(callbackFn, initialValue)
+        Accumulador/prevValue: acumulador de todas as chamdas de callbackFn
+        currentValue: elemento atual sendo acessado pela função.
+        
+    -->    
+</body>
+</html>

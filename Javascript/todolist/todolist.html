@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        * {
+            background-color: beige;
+        }
+        #listdata{
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To - Do List</h1>
+    <input type="text" id="ipdata">
+    <button onclick="add()">Adicionar!</button>
+    
+    <div id="listdata"></div>
+
+    <script>
+
+        document.getElementById('ipdata').focus();
+
+        function add() {
+            var insdt = document.getElementById('ipdata').value;
+            document.getElementById('listdata').innerHTML = insdt;
+
+            document.getElementById('ipdata').focus();
+            document.getElementById('ipdata').value = '';
+        }
+        
+    </script>
+</body>
+</html>

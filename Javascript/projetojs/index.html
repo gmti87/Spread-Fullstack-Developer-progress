@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Contador</title>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Contador <br/> Este é o meu primeiro projeto JavaScript.</p>
+    <p>Clique nos botões para alterar o valor</p>
+    <!-- addEventListener 
+    desabilitar um botão 
+    mudar a cor do texto para vermelho
+    -->
+    <div id="counter">
+        <button name="subtrair" onclick="decrement()" id="b1">-</button>
+        <span id="currentNumber">0</span>
+        <button name="adicionar" onclick="increment()" id="b2">+</button>
+        <button onclick="resetbuttons()">Resetar</button>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+<!--
+    https://paulonoia.wordpress.com/2015/08/12/javascript-exemplo-de-como-adicionar-push-e-remover-splice-itens-de-um-array/
+
+    <div class="container">
+ 
+    <h2>Adicionar:</h2>
+    <p><input type="text" id="addNome" class="form-control" placeholder="Preencher o Nome" /></p>
+    <p><button type="button" class="btn btn-default" onclick="Add($('#addNome').val()); $('#addNome').val('');">Adicionar</button></p>
+ 
+    <h2>Remover:</h2>
+    <p><input id="removeNome" type="number" class="form-control" placeholder="Preencher o Índice" /></p>
+    <p><button type="button" class="btn btn-default" onclick="Remove($('#removeNome').val()); $('#removeNome').val('');">Remover</button></p>
+ 
+    <h2>Resultado:</h2>
+    <div id="RETORNO" class="row" style="padding: 10px 12px;"></div>
+</div>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+	
+var arr_nomes = ["José", "Roberto", "Maria", "Silva"];
+document.getElementById("RETORNO").innerHTML = arr_nomes;
+ 
+function Add(valor) {
+    arr_nomes.push(valor);
+    document.getElementById("RETORNO").innerHTML = arr_nomes;
+}
+ 
+function Remove(posicao) {
+    arr_nomes.splice(posicao, 1);
+    document.getElementById("RETORNO").innerHTML = arr_nomes;
+}
+-->

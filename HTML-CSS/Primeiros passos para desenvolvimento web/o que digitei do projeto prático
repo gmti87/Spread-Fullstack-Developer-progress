@@ -1,0 +1,37 @@
+criar um servidor web
+para isso vamos usar o xampp
+baixe - o e instale
+
+executavel tem bug do xamp
+
+xamp instalado no c:
+
+antes de começar 
+
+criar uma pasta 
+
+configurar o apache para achar a nossa pasta para poder executar
+
+clicar config
+httpd.conf
+procurar a linha documentroute
+
+trocar o endereço para o da sua pasta
+nas duas linhas
+salva
+
+inicie o apache.
+
+criar o arquivo na sua pasta
+
+exemplo usa notepad++
+
+criar um arquivo de texto com o nome pagina.php
+abrir o arquivo
+
+com o servidor funcionando entrar no navegador e colocar localhost
+
+
+
+
+
